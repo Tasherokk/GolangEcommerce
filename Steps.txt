@@ -1,0 +1,72 @@
+mkdir ecommerce-platform
+cd ecommerce-platform
+
+
+
+go mod init github.com/yourusername/ecommerce-platform
+
+
+go get -u github.com/gorilla/mux
+
+
+go get -u all
+
+
+
+go mod tidy
+
+
+
+go get github.com/lib/pq
+go get github.com/gorilla/handlers
+go get github.com/gorilla/mux
+go get github.com/dgrijalva/jwt-go
+go get github.com/go-playground/validator/v10
+go get golang.org/x/crypto/bcrypt
+go get github.com/prometheus/client_golang/prometheus
+go get github.com/prometheus/client_golang/prometheus/promhttp
+go get github.com/sirupsen/logrus
+go get github.com/prometheus/client_golang/prometheus
+go get github.com/prometheus/client_golang/prometheus/promhttp
+
+
+
+
+go mod tidy
+
+
+
+DataBase:
+move Golang_Ecommerce to folder C:\Program Files\PostgreSQL\15\data\custom\Golang_Ecommerce
+run load.sql to add tables in database
+
+
+
+Front:
+npx create-react-app ecommerce-frontend
+npm install axios react-router-dom redux react-redux @reduxjs/toolkit recharts
+
+
+
+
+
+Redis:
+cd C:\Redis
+redis-server.exe
+
+
+
+
+
+
+Role-Based Authorization -> в зависимости от роли разрешать разные действия,
+Создание юзера -> добавить логику создания юзера
+Prepared Statements
+Ensure all SQL queries use prepared statements to prevent SQL injection. 
+Сделать все эндпоинты и сделать сайт
+
+
+
+
+.\prometheus.exe --config.file=prometheus.yml
+
